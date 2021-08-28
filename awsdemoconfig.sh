@@ -37,6 +37,13 @@ cat > /var/www/html/index.html <<'EOF'
   </body>
 EOF
 
+# Configuring TLS (self-signed)
+sudo yum install -y mod_ssl
+cd /etc/pki/tls/certs
+sudo ./make-dummy-cert localhost.crt
+# Commenting out the existing key entry in ssl.conf
+sudo sed -e '/SSLCertificateKeyFile/s/^/#/g' -i  /etc/httpd/conf.d/ssl.conf
+
 # Start Apache
 echo "Starting Apache"
 sudo systemctl start httpd
