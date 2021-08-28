@@ -1,0 +1,621 @@
+Updating System..
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package curl.x86_64 0:7.61.1-12.amzn2.0.4 will be updated
+---> Package curl.x86_64 0:7.76.1-4.amzn2.0.1 will be an update
+---> Package ec2-utils.noarch 0:1.2-44.amzn2 will be updated
+---> Package ec2-utils.noarch 0:1.2-45.amzn2 will be an update
+---> Package grub2.x86_64 1:2.06-2.amzn2.0.1 will be obsoleted
+---> Package grub2.x86_64 1:2.06-2.amzn2.0.3 will be obsoleting
+---> Package grub2-common.noarch 1:2.06-2.amzn2.0.1 will be updated
+---> Package grub2-common.noarch 1:2.06-2.amzn2.0.3 will be an update
+---> Package grub2-efi-x64-ec2.x86_64 1:2.06-2.amzn2.0.1 will be updated
+---> Package grub2-efi-x64-ec2.x86_64 1:2.06-2.amzn2.0.3 will be an update
+---> Package grub2-pc.x86_64 1:2.06-2.amzn2.0.1 will be updated
+---> Package grub2-pc.x86_64 1:2.06-2.amzn2.0.3 will be obsoleting
+---> Package grub2-pc-modules.noarch 1:2.06-2.amzn2.0.1 will be updated
+---> Package grub2-pc-modules.noarch 1:2.06-2.amzn2.0.3 will be an update
+---> Package grub2-tools.x86_64 1:2.06-2.amzn2.0.1 will be obsoleted
+---> Package grub2-tools.x86_64 1:2.06-2.amzn2.0.3 will be obsoleting
+---> Package grub2-tools-efi.x86_64 1:2.06-2.amzn2.0.3 will be obsoleting
+---> Package grub2-tools-extra.x86_64 1:2.06-2.amzn2.0.3 will be obsoleting
+---> Package grub2-tools-minimal.x86_64 1:2.06-2.amzn2.0.1 will be updated
+---> Package grub2-tools-minimal.x86_64 1:2.06-2.amzn2.0.3 will be obsoleting
+---> Package grubby.x86_64 0:8.28-23.amzn2.0.1 will be updated
+---> Package grubby.x86_64 0:8.28-23.amzn2.0.2 will be an update
+---> Package kernel.x86_64 0:4.14.243-185.433.amzn2 will be installed
+---> Package kernel-tools.x86_64 0:4.14.238-182.422.amzn2 will be updated
+---> Package kernel-tools.x86_64 0:4.14.243-185.433.amzn2 will be an update
+---> Package libcurl.x86_64 0:7.61.1-12.amzn2.0.4 will be updated
+---> Package libcurl.x86_64 0:7.76.1-4.amzn2.0.1 will be an update
+---> Package systemtap-runtime.x86_64 0:4.4-1.amzn2.0.1 will be updated
+---> Package systemtap-runtime.x86_64 0:4.4-1.amzn2.0.2 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                Arch      Version                   Repository     Size
+================================================================================
+Installing:
+ grub2                  x86_64    1:2.06-2.amzn2.0.3        amzn2-core     44 k
+     replacing  grub2.x86_64 1:2.06-2.amzn2.0.1
+ grub2-pc               x86_64    1:2.06-2.amzn2.0.3        amzn2-core     44 k
+     replacing  grub2.x86_64 1:2.06-2.amzn2.0.1
+ grub2-tools            x86_64    1:2.06-2.amzn2.0.3        amzn2-core    2.0 M
+     replacing  grub2-tools.x86_64 1:2.06-2.amzn2.0.1
+ grub2-tools-efi        x86_64    1:2.06-2.amzn2.0.3        amzn2-core    559 k
+     replacing  grub2-tools.x86_64 1:2.06-2.amzn2.0.1
+ grub2-tools-extra      x86_64    1:2.06-2.amzn2.0.3        amzn2-core    1.0 M
+     replacing  grub2-tools.x86_64 1:2.06-2.amzn2.0.1
+ grub2-tools-minimal    x86_64    1:2.06-2.amzn2.0.3        amzn2-core    623 k
+     replacing  grub2-tools.x86_64 1:2.06-2.amzn2.0.1
+ kernel                 x86_64    4.14.243-185.433.amzn2    amzn2-core     21 M
+Updating:
+ curl                   x86_64    7.76.1-4.amzn2.0.1        amzn2-core    347 k
+ ec2-utils              noarch    1.2-45.amzn2              amzn2-core     12 k
+ grub2-common           noarch    1:2.06-2.amzn2.0.3        amzn2-core    1.7 M
+ grub2-efi-x64-ec2      x86_64    1:2.06-2.amzn2.0.3        amzn2-core    295 k
+ grub2-pc-modules       noarch    1:2.06-2.amzn2.0.3        amzn2-core    965 k
+ grubby                 x86_64    8.28-23.amzn2.0.2         amzn2-core     70 k
+ kernel-tools           x86_64    4.14.243-185.433.amzn2    amzn2-core    148 k
+ libcurl                x86_64    7.76.1-4.amzn2.0.1        amzn2-core    313 k
+ systemtap-runtime      x86_64    4.4-1.amzn2.0.2           amzn2-core    473 k
+
+Transaction Summary
+================================================================================
+Install  7 Packages
+Upgrade  9 Packages
+
+Total download size: 29 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+--------------------------------------------------------------------------------
+Total                                               32 MB/s |  29 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : 1:grub2-common-2.06-2.amzn2.0.3.noarch                      1/29 
+  Installing : 1:grub2-tools-minimal-2.06-2.amzn2.0.3.x86_64               2/29 
+  Installing : 1:grub2-tools-2.06-2.amzn2.0.3.x86_64                       3/29 
+  Updating   : 1:grub2-pc-modules-2.06-2.amzn2.0.3.noarch                  4/29 
+  Installing : 1:grub2-pc-2.06-2.amzn2.0.3.x86_64                          5/29 
+  Updating   : grubby-8.28-23.amzn2.0.2.x86_64                             6/29 
+  Updating   : libcurl-7.76.1-4.amzn2.0.1.x86_64                           7/29 
+  Updating   : curl-7.76.1-4.amzn2.0.1.x86_64                              8/29 
+  Updating   : ec2-utils-1.2-45.amzn2.noarch                               9/29 
+  Installing : kernel-4.14.243-185.433.amzn2.x86_64                       10/29 
+  Installing : 1:grub2-2.06-2.amzn2.0.3.x86_64                            11/29 
+  Updating   : 1:grub2-efi-x64-ec2-2.06-2.amzn2.0.3.x86_64                12/29 
+  Installing : 1:grub2-tools-extra-2.06-2.amzn2.0.3.x86_64                13/29 
+  Installing : 1:grub2-tools-efi-2.06-2.amzn2.0.3.x86_64                  14/29 
+  Updating   : kernel-tools-4.14.243-185.433.amzn2.x86_64                 15/29 
+  Updating   : systemtap-runtime-4.4-1.amzn2.0.2.x86_64                   16/29 
+  Cleanup    : 1:grub2-efi-x64-ec2-2.06-2.amzn2.0.1.x86_64                17/29 
+  Cleanup    : 1:grub2-2.06-2.amzn2.0.1.x86_64                            18/29 
+  Cleanup    : 1:grub2-pc-2.06-2.amzn2.0.1.x86_64                         19/29 
+  Cleanup    : 1:grub2-pc-modules-2.06-2.amzn2.0.1.noarch                 20/29 
+  Cleanup    : ec2-utils-1.2-44.amzn2.noarch                              21/29 
+  Cleanup    : curl-7.61.1-12.amzn2.0.4.x86_64                            22/29 
+  Cleanup    : 1:grub2-tools-minimal-2.06-2.amzn2.0.1.x86_64              23/29 
+  Cleanup    : 1:grub2-tools-2.06-2.amzn2.0.1.x86_64                      24/29 
+  Cleanup    : 1:grub2-common-2.06-2.amzn2.0.1.noarch                     25/29 
+  Cleanup    : libcurl-7.61.1-12.amzn2.0.4.x86_64                         26/29 
+  Cleanup    : kernel-tools-4.14.238-182.422.amzn2.x86_64                 27/29 
+  Cleanup    : grubby-8.28-23.amzn2.0.1.x86_64                            28/29 
+  Cleanup    : systemtap-runtime-4.4-1.amzn2.0.1.x86_64                   29/29 
+  Verifying  : 1:grub2-pc-modules-2.06-2.amzn2.0.3.noarch                  1/29 
+  Verifying  : systemtap-runtime-4.4-1.amzn2.0.2.x86_64                    2/29 
+  Verifying  : curl-7.76.1-4.amzn2.0.1.x86_64                              3/29 
+  Verifying  : 1:grub2-tools-extra-2.06-2.amzn2.0.3.x86_64                 4/29 
+  Verifying  : 1:grub2-common-2.06-2.amzn2.0.3.noarch                      5/29 
+  Verifying  : 1:grub2-tools-minimal-2.06-2.amzn2.0.3.x86_64               6/29 
+  Verifying  : 1:grub2-efi-x64-ec2-2.06-2.amzn2.0.3.x86_64                 7/29 
+  Verifying  : 1:grub2-tools-2.06-2.amzn2.0.3.x86_64                       8/29 
+  Verifying  : libcurl-7.76.1-4.amzn2.0.1.x86_64                           9/29 
+  Verifying  : ec2-utils-1.2-45.amzn2.noarch                              10/29 
+  Verifying  : 1:grub2-2.06-2.amzn2.0.3.x86_64                            11/29 
+  Verifying  : 1:grub2-pc-2.06-2.amzn2.0.3.x86_64                         12/29 
+  Verifying  : grubby-8.28-23.amzn2.0.2.x86_64                            13/29 
+  Verifying  : kernel-4.14.243-185.433.amzn2.x86_64                       14/29 
+  Verifying  : 1:grub2-tools-efi-2.06-2.amzn2.0.3.x86_64                  15/29 
+  Verifying  : kernel-tools-4.14.243-185.433.amzn2.x86_64                 16/29 
+  Verifying  : 1:grub2-common-2.06-2.amzn2.0.1.noarch                     17/29 
+  Verifying  : 1:grub2-efi-x64-ec2-2.06-2.amzn2.0.1.x86_64                18/29 
+  Verifying  : ec2-utils-1.2-44.amzn2.noarch                              19/29 
+  Verifying  : 1:grub2-tools-2.06-2.amzn2.0.1.x86_64                      20/29 
+  Verifying  : 1:grub2-2.06-2.amzn2.0.1.x86_64                            21/29 
+  Verifying  : systemtap-runtime-4.4-1.amzn2.0.1.x86_64                   22/29 
+  Verifying  : 1:grub2-tools-minimal-2.06-2.amzn2.0.1.x86_64              23/29 
+  Verifying  : curl-7.61.1-12.amzn2.0.4.x86_64                            24/29 
+  Verifying  : 1:grub2-pc-2.06-2.amzn2.0.1.x86_64                         25/29 
+  Verifying  : kernel-tools-4.14.238-182.422.amzn2.x86_64                 26/29 
+  Verifying  : libcurl-7.61.1-12.amzn2.0.4.x86_64                         27/29 
+  Verifying  : 1:grub2-pc-modules-2.06-2.amzn2.0.1.noarch                 28/29 
+  Verifying  : grubby-8.28-23.amzn2.0.1.x86_64                            29/29 
+
+Installed:
+  grub2.x86_64 1:2.06-2.amzn2.0.3                                               
+  grub2-pc.x86_64 1:2.06-2.amzn2.0.3                                            
+  grub2-tools.x86_64 1:2.06-2.amzn2.0.3                                         
+  grub2-tools-efi.x86_64 1:2.06-2.amzn2.0.3                                     
+  grub2-tools-extra.x86_64 1:2.06-2.amzn2.0.3                                   
+  grub2-tools-minimal.x86_64 1:2.06-2.amzn2.0.3                                 
+  kernel.x86_64 0:4.14.243-185.433.amzn2                                        
+
+Updated:
+  curl.x86_64 0:7.76.1-4.amzn2.0.1                                              
+  ec2-utils.noarch 0:1.2-45.amzn2                                               
+  grub2-common.noarch 1:2.06-2.amzn2.0.3                                        
+  grub2-efi-x64-ec2.x86_64 1:2.06-2.amzn2.0.3                                   
+  grub2-pc-modules.noarch 1:2.06-2.amzn2.0.3                                    
+  grubby.x86_64 0:8.28-23.amzn2.0.2                                             
+  kernel-tools.x86_64 0:4.14.243-185.433.amzn2                                  
+  libcurl.x86_64 0:7.76.1-4.amzn2.0.1                                           
+  systemtap-runtime.x86_64 0:4.4-1.amzn2.0.2                                    
+
+Replaced:
+  grub2.x86_64 1:2.06-2.amzn2.0.1     grub2-tools.x86_64 1:2.06-2.amzn2.0.1    
+
+Complete!
+Installing Amazon Linux Extras Repositories
+If this step fails stating sudo: amazon-linux-extras: command not found then your instance was not launched with Amazon Linux 2 AMI, but maybe with Amazon Linux AMI instead
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Cleaning repos: amzn2-core amzn2extra-docker amzn2extra-lamp-mariadb10.2-php7.2
+              : amzn2extra-php7.2
+22 metadata files removed
+8 sqlite files removed
+0 metadata files removed
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package mariadb.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+--> Processing Dependency: mariadb-libs(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: mariadb-common(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-10.2.38-1.amzn2.0.1.x86_64
+---> Package php-cli.x86_64 0:7.2.34-1.amzn2 will be installed
+--> Processing Dependency: php-common(x86-64) = 7.2.34-1.amzn2 for package: php-cli-7.2.34-1.amzn2.x86_64
+---> Package php-fpm.x86_64 0:7.2.34-1.amzn2 will be installed
+---> Package php-json.x86_64 0:7.2.34-1.amzn2 will be installed
+---> Package php-mysqlnd.x86_64 0:7.2.34-1.amzn2 will be installed
+---> Package php-pdo.x86_64 0:7.2.34-1.amzn2 will be installed
+--> Running transaction check
+---> Package mariadb-common.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+--> Processing Dependency: /etc/my.cnf for package: 3:mariadb-common-10.2.38-1.amzn2.0.1.x86_64
+---> Package mariadb-libs.x86_64 1:5.5.68-1.amzn2 will be updated
+---> Package mariadb-libs.x86_64 3:10.2.38-1.amzn2.0.1 will be an update
+---> Package php-common.x86_64 0:7.2.34-1.amzn2 will be installed
+--> Processing Dependency: libzip.so.5()(64bit) for package: php-common-7.2.34-1.amzn2.x86_64
+--> Running transaction check
+---> Package libzip.x86_64 0:1.3.2-1.amzn2.0.1 will be installed
+---> Package mariadb-config.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+---> Package mariadb-libs.x86_64 1:5.5.68-1.amzn2 will be updated
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package      Arch   Version           Repository                          Size
+================================================================================
+Installing:
+ mariadb      x86_64 3:10.2.38-1.amzn2.0.1
+                                       amzn2extra-lamp-mariadb10.2-php7.2 6.1 M
+ php-cli      x86_64 7.2.34-1.amzn2    amzn2extra-php7.2                  4.4 M
+ php-fpm      x86_64 7.2.34-1.amzn2    amzn2extra-php7.2                  1.5 M
+ php-json     x86_64 7.2.34-1.amzn2    amzn2extra-php7.2                   71 k
+ php-mysqlnd  x86_64 7.2.34-1.amzn2    amzn2extra-php7.2                  238 k
+ php-pdo      x86_64 7.2.34-1.amzn2    amzn2extra-php7.2                  132 k
+Installing for dependencies:
+ libzip       x86_64 1.3.2-1.amzn2.0.1 amzn2-core                          62 k
+ mariadb-common
+              x86_64 3:10.2.38-1.amzn2.0.1
+                                       amzn2extra-lamp-mariadb10.2-php7.2  58 k
+ mariadb-config
+              x86_64 3:10.2.38-1.amzn2.0.1
+                                       amzn2extra-lamp-mariadb10.2-php7.2  34 k
+ php-common   x86_64 7.2.34-1.amzn2    amzn2extra-php7.2                  1.1 M
+Updating for dependencies:
+ mariadb-libs x86_64 3:10.2.38-1.amzn2.0.1
+                                       amzn2extra-lamp-mariadb10.2-php7.2 154 k
+
+Transaction Summary
+================================================================================
+Install  6 Packages (+4 Dependent packages)
+Upgrade             ( 1 Dependent package)
+
+Total download size: 14 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+--------------------------------------------------------------------------------
+Total                                               18 MB/s |  14 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libzip-1.3.2-1.amzn2.0.1.x86_64                             1/12 
+  Installing : php-common-7.2.34-1.amzn2.x86_64                            2/12 
+  Installing : php-json-7.2.34-1.amzn2.x86_64                              3/12 
+  Installing : php-pdo-7.2.34-1.amzn2.x86_64                               4/12 
+  Installing : 3:mariadb-config-10.2.38-1.amzn2.0.1.x86_64                 5/12 
+  Installing : 3:mariadb-common-10.2.38-1.amzn2.0.1.x86_64                 6/12 
+  Updating   : 3:mariadb-libs-10.2.38-1.amzn2.0.1.x86_64                   7/12 
+  Installing : 3:mariadb-10.2.38-1.amzn2.0.1.x86_64                        8/12 
+  Installing : php-mysqlnd-7.2.34-1.amzn2.x86_64                           9/12 
+  Installing : php-fpm-7.2.34-1.amzn2.x86_64                              10/12 
+  Installing : php-cli-7.2.34-1.amzn2.x86_64                              11/12 
+  Cleanup    : 1:mariadb-libs-5.5.68-1.amzn2.x86_64                       12/12 
+  Verifying  : php-fpm-7.2.34-1.amzn2.x86_64                               1/12 
+  Verifying  : php-cli-7.2.34-1.amzn2.x86_64                               2/12 
+  Verifying  : 3:mariadb-common-10.2.38-1.amzn2.0.1.x86_64                 3/12 
+  Verifying  : 3:mariadb-libs-10.2.38-1.amzn2.0.1.x86_64                   4/12 
+  Verifying  : php-json-7.2.34-1.amzn2.x86_64                              5/12 
+  Verifying  : 3:mariadb-config-10.2.38-1.amzn2.0.1.x86_64                 6/12 
+  Verifying  : libzip-1.3.2-1.amzn2.0.1.x86_64                             7/12 
+  Verifying  : php-mysqlnd-7.2.34-1.amzn2.x86_64                           8/12 
+  Verifying  : php-pdo-7.2.34-1.amzn2.x86_64                               9/12 
+  Verifying  : 3:mariadb-10.2.38-1.amzn2.0.1.x86_64                       10/12 
+  Verifying  : php-common-7.2.34-1.amzn2.x86_64                           11/12 
+  Verifying  : 1:mariadb-libs-5.5.68-1.amzn2.x86_64                       12/12 
+
+Installed:
+  mariadb.x86_64 3:10.2.38-1.amzn2.0.1     php-cli.x86_64 0:7.2.34-1.amzn2     
+  php-fpm.x86_64 0:7.2.34-1.amzn2          php-json.x86_64 0:7.2.34-1.amzn2    
+  php-mysqlnd.x86_64 0:7.2.34-1.amzn2      php-pdo.x86_64 0:7.2.34-1.amzn2     
+
+Dependency Installed:
+  libzip.x86_64 0:1.3.2-1.amzn2.0.1                                             
+  mariadb-common.x86_64 3:10.2.38-1.amzn2.0.1                                   
+  mariadb-config.x86_64 3:10.2.38-1.amzn2.0.1                                   
+  php-common.x86_64 0:7.2.34-1.amzn2                                            
+
+Dependency Updated:
+  mariadb-libs.x86_64 3:10.2.38-1.amzn2.0.1                                     
+
+Complete!
+Installing php-pdo, php-mysqlnd, php-fpm, php-cli, php-json, mariadb
+  0  ansible2                        available    \
+        [ =2.4.2  =2.4.6  =2.8  =stable ]
+  2  httpd_modules                   available    [ =1.0  =stable ]
+  3  memcached1.5                    available    \
+        [ =1.5.1  =1.5.16  =1.5.17 ]
+  5  postgresql9.6                   available    \
+        [ =9.6.6  =9.6.8  =stable ]
+  6  postgresql10                    available    [ =10  =stable ]
+  9  R3.4                            available    [ =3.4.3  =stable ]
+ 10  rust1                           available    \
+        [ =1.22.1  =1.26.0  =1.26.1  =1.27.2  =1.31.0  =1.38.0
+          =stable ]
+ 11  vim                             available    [ =8.0  =stable ]
+ 15  php7.2=latest                   enabled      \
+        [ =7.2.0  =7.2.4  =7.2.5  =7.2.8  =7.2.11  =7.2.13  =7.2.14
+          =7.2.16  =7.2.17  =7.2.19  =7.2.21  =7.2.22  =7.2.23
+          =7.2.24  =7.2.26  =stable ]
+ 17  lamp-mariadb10.2-php7.2=latest  enabled      \
+        [ =10.2.10_7.2.0  =10.2.10_7.2.4  =10.2.10_7.2.5
+          =10.2.10_7.2.8  =10.2.10_7.2.11  =10.2.10_7.2.13
+          =10.2.10_7.2.14  =10.2.10_7.2.16  =10.2.10_7.2.17
+          =10.2.10_7.2.19  =10.2.10_7.2.22  =10.2.10_7.2.23
+          =10.2.10_7.2.24  =stable ]
+ 18  libreoffice                     available    \
+        [ =5.0.6.2_15  =5.3.6.1  =stable ]
+ 19  gimp                            available    [ =2.8.22 ]
+ 20  docker=latest                   enabled      \
+        [ =17.12.1  =18.03.1  =18.06.1  =18.09.9  =stable ]
+ 21  mate-desktop1.x                 available    \
+        [ =1.19.0  =1.20.0  =stable ]
+ 22  GraphicsMagick1.3               available    \
+        [ =1.3.29  =1.3.32  =1.3.34  =stable ]
+ 23  tomcat8.5                       available    \
+        [ =8.5.31  =8.5.32  =8.5.38  =8.5.40  =8.5.42  =8.5.50
+          =stable ]
+ 24  epel                            available    [ =7.11  =stable ]
+ 25  testing                         available    [ =1.0  =stable ]
+ 26  ecs                             available    [ =stable ]
+ 27  corretto8                       available    \
+        [ =1.8.0_192  =1.8.0_202  =1.8.0_212  =1.8.0_222  =1.8.0_232
+          =1.8.0_242  =stable ]
+ 28  firecracker                     available    [ =0.11  =stable ]
+ 29  golang1.11                      available    \
+        [ =1.11.3  =1.11.11  =1.11.13  =stable ]
+ 30  squid4                          available    [ =4  =stable ]
+  _  php7.3                          available    \
+        [ =7.3.2  =7.3.3  =7.3.4  =7.3.6  =7.3.8  =7.3.9  =7.3.10
+          =7.3.11  =7.3.13  =stable ]
+ 32  lustre2.10                      available    \
+        [ =2.10.5  =2.10.8  =stable ]
+ 33  java-openjdk11                  available    [ =11  =stable ]
+ 34  lynis                           available    [ =stable ]
+ 35  kernel-ng                       available    [ =stable ]
+ 36  BCC                             available    [ =0.x  =stable ]
+ 37  mono                            available    [ =5.x  =stable ]
+ 38  nginx1                          available    [ =stable ]
+ 39  ruby2.6                         available    [ =2.6  =stable ]
+ 40  mock                            available    [ =stable ]
+ 41  postgresql11                    available    [ =11  =stable ]
+  _  php7.4                          available    [ =stable ]
+ 43  livepatch                       available    [ =stable ]
+ 44  python3.8                       available    [ =stable ]
+ 45  haproxy2                        available    [ =stable ]
+ 46  collectd                        available    [ =stable ]
+ 47  aws-nitro-enclaves-cli          available    [ =stable ]
+ 48  R4                              available    [ =stable ]
+ 49  kernel-5.4                      available    [ =stable ]
+ 50  selinux-ng                      available    [ =stable ]
+  _  php8.0                          available    [ =stable ]
+ 52  tomcat9                         available    [ =stable ]
+ 53  unbound1.13                     available    [ =stable ]
+  _  mariadb10.5                     available    [ =stable ]
+ 55  kernel-5.10                     available    [ =stable ]
+ 56  redis6                          available    [ =stable ]
+ 57  ruby3.0                         available    [ =stable ]
+ 58  postgresql12                    available    [ =stable ]
+ 59  postgresql13                    available    [ =stable ]
+ 60  mock2                           available    [ =stable ]
+ 61  dnsmasq2.85                     available    [ =stable ]
+Installing Apache, MariaDB-Server
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package httpd.x86_64 0:2.4.48-2.amzn2 will be installed
+--> Processing Dependency: httpd-tools = 2.4.48-2.amzn2 for package: httpd-2.4.48-2.amzn2.x86_64
+--> Processing Dependency: httpd-filesystem = 2.4.48-2.amzn2 for package: httpd-2.4.48-2.amzn2.x86_64
+--> Processing Dependency: system-logos-httpd for package: httpd-2.4.48-2.amzn2.x86_64
+--> Processing Dependency: mod_http2 for package: httpd-2.4.48-2.amzn2.x86_64
+--> Processing Dependency: httpd-filesystem for package: httpd-2.4.48-2.amzn2.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.48-2.amzn2.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.48-2.amzn2.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.48-2.amzn2.x86_64
+---> Package mariadb-server.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+--> Processing Dependency: mariadb-tokudb-engine(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: mariadb-server-utils(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: mariadb-rocksdb-engine(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: mariadb-gssapi-server(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: mariadb-errmsg(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: mariadb-cracklib-password-check(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: mariadb-backup(x86-64) = 3:10.2.38-1.amzn2.0.1 for package: 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: bison for package: 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package apr.x86_64 0:1.6.3-5.amzn2.0.2 will be installed
+---> Package apr-util.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+--> Processing Dependency: apr-util-bdb(x86-64) = 1.6.1-5.amzn2.0.2 for package: apr-util-1.6.1-5.amzn2.0.2.x86_64
+---> Package bison.x86_64 0:3.0.4-6.amzn2.0.2 will be installed
+--> Processing Dependency: m4 >= 1.4 for package: bison-3.0.4-6.amzn2.0.2.x86_64
+---> Package generic-logos-httpd.noarch 0:18.0.0-4.amzn2 will be installed
+---> Package httpd-filesystem.noarch 0:2.4.48-2.amzn2 will be installed
+---> Package httpd-tools.x86_64 0:2.4.48-2.amzn2 will be installed
+---> Package mailcap.noarch 0:2.1.41-2.amzn2 will be installed
+---> Package mariadb-backup.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+---> Package mariadb-cracklib-password-check.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+---> Package mariadb-errmsg.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+---> Package mariadb-gssapi-server.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+---> Package mariadb-rocksdb-engine.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+---> Package mariadb-server-utils.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+--> Processing Dependency: perl(Data::Dumper) for package: 3:mariadb-server-utils-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(DBI) for package: 3:mariadb-server-utils-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(DBI) for package: 3:mariadb-server-utils-10.2.38-1.amzn2.0.1.x86_64
+--> Processing Dependency: perl(DBD::mysql) for package: 3:mariadb-server-utils-10.2.38-1.amzn2.0.1.x86_64
+---> Package mariadb-tokudb-engine.x86_64 3:10.2.38-1.amzn2.0.1 will be installed
+---> Package mod_http2.x86_64 0:1.15.19-1.amzn2.0.1 will be installed
+--> Running transaction check
+---> Package apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+---> Package m4.x86_64 0:1.4.16-10.amzn2.0.2 will be installed
+---> Package perl-DBD-MySQL.x86_64 0:4.023-6.amzn2 will be installed
+---> Package perl-DBI.x86_64 0:1.627-4.amzn2.0.2 will be installed
+--> Processing Dependency: perl(RPC::PlServer) >= 0.2001 for package: perl-DBI-1.627-4.amzn2.0.2.x86_64
+--> Processing Dependency: perl(RPC::PlClient) >= 0.2000 for package: perl-DBI-1.627-4.amzn2.0.2.x86_64
+---> Package perl-Data-Dumper.x86_64 0:2.145-3.amzn2.0.2 will be installed
+--> Running transaction check
+---> Package perl-PlRPC.noarch 0:0.2020-14.amzn2 will be installed
+--> Processing Dependency: perl(Net::Daemon) >= 0.13 for package: perl-PlRPC-0.2020-14.amzn2.noarch
+--> Processing Dependency: perl(Net::Daemon::Test) for package: perl-PlRPC-0.2020-14.amzn2.noarch
+--> Processing Dependency: perl(Net::Daemon::Log) for package: perl-PlRPC-0.2020-14.amzn2.noarch
+--> Processing Dependency: perl(Compress::Zlib) for package: perl-PlRPC-0.2020-14.amzn2.noarch
+--> Running transaction check
+---> Package perl-IO-Compress.noarch 0:2.061-2.amzn2 will be installed
+--> Processing Dependency: perl(Compress::Raw::Zlib) >= 2.061 for package: perl-IO-Compress-2.061-2.amzn2.noarch
+--> Processing Dependency: perl(Compress::Raw::Bzip2) >= 2.061 for package: perl-IO-Compress-2.061-2.amzn2.noarch
+---> Package perl-Net-Daemon.noarch 0:0.48-5.amzn2 will be installed
+--> Running transaction check
+---> Package perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.amzn2.0.2 will be installed
+---> Package perl-Compress-Raw-Zlib.x86_64 1:2.061-4.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                         Arch   Version               Repository   Size
+================================================================================
+Installing:
+ httpd                           x86_64 2.4.48-2.amzn2        amzn2-core  1.3 M
+ mariadb-server                  x86_64 3:10.2.38-1.amzn2.0.1 amzn2extra-lamp-mariadb10.2-php7.2
+                                                                           17 M
+Installing for dependencies:
+ apr                             x86_64 1.6.3-5.amzn2.0.2     amzn2-core  118 k
+ apr-util                        x86_64 1.6.1-5.amzn2.0.2     amzn2-core   99 k
+ apr-util-bdb                    x86_64 1.6.1-5.amzn2.0.2     amzn2-core   19 k
+ bison                           x86_64 3.0.4-6.amzn2.0.2     amzn2-core  674 k
+ generic-logos-httpd             noarch 18.0.0-4.amzn2        amzn2-core   19 k
+ httpd-filesystem                noarch 2.4.48-2.amzn2        amzn2-core   24 k
+ httpd-tools                     x86_64 2.4.48-2.amzn2        amzn2-core   87 k
+ m4                              x86_64 1.4.16-10.amzn2.0.2   amzn2-core  256 k
+ mailcap                         noarch 2.1.41-2.amzn2        amzn2-core   31 k
+ mariadb-backup                  x86_64 3:10.2.38-1.amzn2.0.1 amzn2extra-lamp-mariadb10.2-php7.2
+                                                                          5.9 M
+ mariadb-cracklib-password-check x86_64 3:10.2.38-1.amzn2.0.1 amzn2extra-lamp-mariadb10.2-php7.2
+                                                                           37 k
+ mariadb-errmsg                  x86_64 3:10.2.38-1.amzn2.0.1 amzn2extra-lamp-mariadb10.2-php7.2
+                                                                          222 k
+ mariadb-gssapi-server           x86_64 3:10.2.38-1.amzn2.0.1 amzn2extra-lamp-mariadb10.2-php7.2
+                                                                           39 k
+ mariadb-rocksdb-engine          x86_64 3:10.2.38-1.amzn2.0.1 amzn2extra-lamp-mariadb10.2-php7.2
+                                                                          5.5 M
+ mariadb-server-utils            x86_64 3:10.2.38-1.amzn2.0.1 amzn2extra-lamp-mariadb10.2-php7.2
+                                                                          1.6 M
+ mariadb-tokudb-engine           x86_64 3:10.2.38-1.amzn2.0.1 amzn2extra-lamp-mariadb10.2-php7.2
+                                                                          833 k
+ mod_http2                       x86_64 1.15.19-1.amzn2.0.1   amzn2-core  149 k
+ perl-Compress-Raw-Bzip2         x86_64 2.061-3.amzn2.0.2     amzn2-core   32 k
+ perl-Compress-Raw-Zlib          x86_64 1:2.061-4.amzn2.0.2   amzn2-core   58 k
+ perl-DBD-MySQL                  x86_64 4.023-6.amzn2         amzn2-core  141 k
+ perl-DBI                        x86_64 1.627-4.amzn2.0.2     amzn2-core  804 k
+ perl-Data-Dumper                x86_64 2.145-3.amzn2.0.2     amzn2-core   48 k
+ perl-IO-Compress                noarch 2.061-2.amzn2         amzn2-core  260 k
+ perl-Net-Daemon                 noarch 0.48-5.amzn2          amzn2-core   51 k
+ perl-PlRPC                      noarch 0.2020-14.amzn2       amzn2-core   36 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages (+25 Dependent packages)
+
+Total download size: 36 M
+Installed size: 150 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                               26 MB/s |  36 MB  00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : apr-1.6.3-5.amzn2.0.2.x86_64                                1/27 
+  Installing : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                       2/27 
+  Installing : apr-util-1.6.1-5.amzn2.0.2.x86_64                           3/27 
+  Installing : perl-Data-Dumper-2.145-3.amzn2.0.2.x86_64                   4/27 
+  Installing : httpd-tools-2.4.48-2.amzn2.x86_64                           5/27 
+  Installing : httpd-filesystem-2.4.48-2.amzn2.noarch                      6/27 
+  Installing : perl-Net-Daemon-0.48-5.amzn2.noarch                         7/27 
+  Installing : m4-1.4.16-10.amzn2.0.2.x86_64                               8/27 
+  Installing : bison-3.0.4-6.amzn2.0.2.x86_64                              9/27 
+  Installing : perl-Compress-Raw-Bzip2-2.061-3.amzn2.0.2.x86_64           10/27 
+  Installing : generic-logos-httpd-18.0.0-4.amzn2.noarch                  11/27 
+  Installing : mailcap-2.1.41-2.amzn2.noarch                              12/27 
+  Installing : mod_http2-1.15.19-1.amzn2.0.1.x86_64                       13/27 
+  Installing : httpd-2.4.48-2.amzn2.x86_64                                14/27 
+  Installing : 1:perl-Compress-Raw-Zlib-2.061-4.amzn2.0.2.x86_64          15/27 
+  Installing : perl-IO-Compress-2.061-2.amzn2.noarch                      16/27 
+  Installing : perl-PlRPC-0.2020-14.amzn2.noarch                          17/27 
+  Installing : perl-DBI-1.627-4.amzn2.0.2.x86_64                          18/27 
+  Installing : perl-DBD-MySQL-4.023-6.amzn2.x86_64                        19/27 
+  Installing : 3:mariadb-errmsg-10.2.38-1.amzn2.0.1.x86_64                20/27 
+  Installing : 3:mariadb-cracklib-password-check-10.2.38-1.amzn2.0.1.x8   21/27 
+  Installing : 3:mariadb-gssapi-server-10.2.38-1.amzn2.0.1.x86_64         22/27 
+  Installing : 3:mariadb-tokudb-engine-10.2.38-1.amzn2.0.1.x86_64         23/27 
+  Installing : 3:mariadb-rocksdb-engine-10.2.38-1.amzn2.0.1.x86_64        24/27 
+  Installing : 3:mariadb-server-utils-10.2.38-1.amzn2.0.1.x86_64          25/27 
+  Installing : 3:mariadb-backup-10.2.38-1.amzn2.0.1.x86_64                26/27 
+  Installing : 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64                27/27 
+  Verifying  : 3:mariadb-errmsg-10.2.38-1.amzn2.0.1.x86_64                 1/27 
+  Verifying  : 1:perl-Compress-Raw-Zlib-2.061-4.amzn2.0.2.x86_64           2/27 
+  Verifying  : mailcap-2.1.41-2.amzn2.noarch                               3/27 
+  Verifying  : apr-1.6.3-5.amzn2.0.2.x86_64                                4/27 
+  Verifying  : 3:mariadb-cracklib-password-check-10.2.38-1.amzn2.0.1.x8    5/27 
+  Verifying  : generic-logos-httpd-18.0.0-4.amzn2.noarch                   6/27 
+  Verifying  : perl-Compress-Raw-Bzip2-2.061-3.amzn2.0.2.x86_64            7/27 
+  Verifying  : perl-DBI-1.627-4.amzn2.0.2.x86_64                           8/27 
+  Verifying  : perl-PlRPC-0.2020-14.amzn2.noarch                           9/27 
+  Verifying  : apr-util-1.6.1-5.amzn2.0.2.x86_64                          10/27 
+  Verifying  : 3:mariadb-gssapi-server-10.2.38-1.amzn2.0.1.x86_64         11/27 
+  Verifying  : 3:mariadb-tokudb-engine-10.2.38-1.amzn2.0.1.x86_64         12/27 
+  Verifying  : m4-1.4.16-10.amzn2.0.2.x86_64                              13/27 
+  Verifying  : perl-DBD-MySQL-4.023-6.amzn2.x86_64                        14/27 
+  Verifying  : perl-Data-Dumper-2.145-3.amzn2.0.2.x86_64                  15/27 
+  Verifying  : 3:mariadb-rocksdb-engine-10.2.38-1.amzn2.0.1.x86_64        16/27 
+  Verifying  : apr-util-bdb-1.6.1-5.amzn2.0.2.x86_64                      17/27 
+  Verifying  : 3:mariadb-server-10.2.38-1.amzn2.0.1.x86_64                18/27 
+  Verifying  : bison-3.0.4-6.amzn2.0.2.x86_64                             19/27 
+  Verifying  : httpd-tools-2.4.48-2.amzn2.x86_64                          20/27 
+  Verifying  : httpd-2.4.48-2.amzn2.x86_64                                21/27 
+  Verifying  : perl-Net-Daemon-0.48-5.amzn2.noarch                        22/27 
+  Verifying  : 3:mariadb-server-utils-10.2.38-1.amzn2.0.1.x86_64          23/27 
+  Verifying  : perl-IO-Compress-2.061-2.amzn2.noarch                      24/27 
+  Verifying  : httpd-filesystem-2.4.48-2.amzn2.noarch                     25/27 
+  Verifying  : 3:mariadb-backup-10.2.38-1.amzn2.0.1.x86_64                26/27 
+  Verifying  : mod_http2-1.15.19-1.amzn2.0.1.x86_64                       27/27 
+
+Installed:
+  httpd.x86_64 0:2.4.48-2.amzn2   mariadb-server.x86_64 3:10.2.38-1.amzn2.0.1  
+
+Dependency Installed:
+  apr.x86_64 0:1.6.3-5.amzn2.0.2                                                
+  apr-util.x86_64 0:1.6.1-5.amzn2.0.2                                           
+  apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2                                       
+  bison.x86_64 0:3.0.4-6.amzn2.0.2                                              
+  generic-logos-httpd.noarch 0:18.0.0-4.amzn2                                   
+  httpd-filesystem.noarch 0:2.4.48-2.amzn2                                      
+  httpd-tools.x86_64 0:2.4.48-2.amzn2                                           
+  m4.x86_64 0:1.4.16-10.amzn2.0.2                                               
+  mailcap.noarch 0:2.1.41-2.amzn2                                               
+  mariadb-backup.x86_64 3:10.2.38-1.amzn2.0.1                                   
+  mariadb-cracklib-password-check.x86_64 3:10.2.38-1.amzn2.0.1                  
+  mariadb-errmsg.x86_64 3:10.2.38-1.amzn2.0.1                                   
+  mariadb-gssapi-server.x86_64 3:10.2.38-1.amzn2.0.1                            
+  mariadb-rocksdb-engine.x86_64 3:10.2.38-1.amzn2.0.1                           
+  mariadb-server-utils.x86_64 3:10.2.38-1.amzn2.0.1                             
+  mariadb-tokudb-engine.x86_64 3:10.2.38-1.amzn2.0.1                            
+  mod_http2.x86_64 0:1.15.19-1.amzn2.0.1                                        
+  perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.amzn2.0.2                            
+  perl-Compress-Raw-Zlib.x86_64 1:2.061-4.amzn2.0.2                             
+  perl-DBD-MySQL.x86_64 0:4.023-6.amzn2                                         
+  perl-DBI.x86_64 0:1.627-4.amzn2.0.2                                           
+  perl-Data-Dumper.x86_64 0:2.145-3.amzn2.0.2                                   
+  perl-IO-Compress.noarch 0:2.061-2.amzn2                                       
+  perl-Net-Daemon.noarch 0:0.48-5.amzn2                                         
+  perl-PlRPC.noarch 0:0.2020-14.amzn2                                           
+
+Complete!
+Permissions for /var/www
+Permissions have been set
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package mod_ssl.x86_64 1:2.4.48-2.amzn2 will be installed
+--> Processing Dependency: sscg >= 2.2.0 for package: 1:mod_ssl-2.4.48-2.amzn2.x86_64
+--> Running transaction check
+---> Package sscg.x86_64 0:2.3.3-2.amzn2.0.1 will be installed
+--> Processing Dependency: libtalloc.so.2(TALLOC_2.0.2)(64bit) for package: sscg-2.3.3-2.amzn2.0.1.x86_64
+--> Processing Dependency: libtalloc.so.2()(64bit) for package: sscg-2.3.3-2.amzn2.0.1.x86_64
+--> Running transaction check
+---> Package libtalloc.x86_64 0:2.1.16-1.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch         Version                    Repository        Size
+================================================================================
+Installing:
+ mod_ssl         x86_64       1:2.4.48-2.amzn2           amzn2-core       117 k
+Installing for dependencies:
+ libtalloc       x86_64       2.1.16-1.amzn2             amzn2-core        42 k
+ sscg            x86_64       2.3.3-2.amzn2.0.1          amzn2-core        51 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 210 k
+Installed size: 438 k
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.3 MB/s | 210 kB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libtalloc-2.1.16-1.amzn2.x86_64                              1/3 
+  Installing : sscg-2.3.3-2.amzn2.0.1.x86_64                                2/3 
+  Installing : 1:mod_ssl-2.4.48-2.amzn2.x86_64                              3/3 
+  Verifying  : sscg-2.3.3-2.amzn2.0.1.x86_64                                1/3 
+  Verifying  : libtalloc-2.1.16-1.amzn2.x86_64                              2/3 
+  Verifying  : 1:mod_ssl-2.4.48-2.amzn2.x86_64                              3/3 
+
+Installed:
+  mod_ssl.x86_64 1:2.4.48-2.amzn2                                               
+
+Dependency Installed:
+  libtalloc.x86_64 0:2.1.16-1.amzn2       sscg.x86_64 0:2.3.3-2.amzn2.0.1      
+
+Complete!
+Starting Apache
+Set Apache enabled at boot
+enabled
