@@ -33,7 +33,7 @@ cat > /var/www/html/index.html <<'EOF'
     <title>Hello AWS !</title>
   </head>
   <body>
-    <h1>Hello AWS</h1>
+    <h1>Hello AWS !</h1>
   </body>
 EOF
 
