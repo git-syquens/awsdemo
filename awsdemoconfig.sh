@@ -26,7 +26,7 @@ sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
 sudo find /var/www -type f -exec sudo chmod 0664 {} \;
 echo "Permissions have been set"
 
-# Create Hello AWS page
+# Create Hello AWS ! page
 cat > /var/www/html/index.html <<'EOF'
   <html>
   <head>
@@ -43,6 +43,7 @@ cd /etc/pki/tls/certs
 sudo ./make-dummy-cert localhost.crt
 # Commenting out the existing key entry in ssl.conf
 sudo sed -e '/SSLCertificateKeyFile/s/^/#/g' -i  /etc/httpd/conf.d/ssl.conf
+
 
 # Start Apache
 echo "Starting Apache"
